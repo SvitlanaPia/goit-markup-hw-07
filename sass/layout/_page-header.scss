@@ -1,9 +1,9 @@
-.header-box {
+.header {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,14 +11,14 @@
 .navigation-container {
   display: flex;
 }
-.header-list {
+.site-nav, .contacts {
   display: flex;
   align-items: center;
 }
-.header-list__item:not(:last-child) {
+.site-nav__item:not(:last-child), .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
-.header-list__link {
+.site-nav__link {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -33,7 +33,7 @@
     color: var(--accent-color);
   }
 }
-.header-list__link-current {
+.site-nav__link-current {
   color: var(--accent-color);
   position: relative;
 

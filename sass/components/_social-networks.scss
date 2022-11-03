@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
 }
-.team-list__social-networks-links {
+.social-networks__item-links {
   fill: var(--icons-color);
   transition: fill var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
@@ -23,7 +23,7 @@
     fill: var(--white-color);
   }
 }
-.team-list__social-networks {
+.social-networks__item {
   width: 44px;
   height: 44px;
 }

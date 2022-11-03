@@ -60,8 +60,21 @@ img {
   padding-bottom: 94px;
 }
 
-.section-services {
+.section__no-padding-top {
   padding-top: 0px;
+}
+
+.section__other-background {
+  background-color: var(--filer-and-team);
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -80,7 +93,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.logo-header {
+.logo__header {
   margin-right: 93px;
 }
 
@@ -101,7 +114,7 @@ img {
   margin-bottom: 20px;
 }
 
-.address__contacts, .header-list__contacts {
+.address__contacts, .contacts__link {
   color: var(--second-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -110,17 +123,17 @@ img {
   letter-spacing: 0.02em;
   transition: color var(--transition-dur-and-func);
 }
-.address__contacts:hover, .header-list__contacts:hover, .address__contacts:focus, .header-list__contacts:focus, .address__contacts:active, .header-list__contacts:active {
+.address__contacts:hover, .contacts__link:hover, .address__contacts:focus, .contacts__link:focus, .address__contacts:active, .contacts__link:active {
   color: var(--accent-color);
 }
 
-.header-list__contacts {
+.contacts__link {
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
 
-.header-list__contact-icon {
+.contacts__icon {
   fill: currentColor;
 }
 
@@ -181,15 +194,6 @@ img {
   cursor: pointer;
 }
 
-.main-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
 .portfolio-list__name {
   font-weight: 700;
   font-size: 18px;
@@ -240,16 +244,16 @@ img {
   align-items: center;
 }
 
-.team-list__social-networks-links {
+.social-networks__item-links {
   fill: var(--icons-color);
   transition: fill var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
-.team-list__social-networks-links:hover, .team-list__social-networks-links:focus, .team-list__social-networks-links:active {
+.social-networks__item-links:hover, .social-networks__item-links:focus, .social-networks__item-links:active {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
 
-.team-list__social-networks {
+.social-networks__item {
   width: 44px;
   height: 44px;
 }
@@ -470,13 +474,13 @@ img {
   color: var(--accent-color);
 }
 
-.header-box {
+.header {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -486,16 +490,16 @@ img {
   display: flex;
 }
 
-.header-list {
+.site-nav, .contacts {
   display: flex;
   align-items: center;
 }
 
-.header-list__item:not(:last-child) {
+.site-nav__item:not(:last-child), .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-list__link {
+.site-nav__link {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -504,15 +508,15 @@ img {
   letter-spacing: 0.02em;
   transition: color var(--transition-dur-and-func);
 }
-.header-list__link:hover, .header-list__link:focus, .header-list__link:active {
+.site-nav__link:hover, .site-nav__link:focus, .site-nav__link:active {
   color: var(--accent-color);
 }
 
-.header-list__link-current {
+.site-nav__link-current {
   color: var(--accent-color);
   position: relative;
 }
-.header-list__link-current::after {
+.site-nav__link-current::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -554,7 +558,7 @@ img {
   display: flex;
 }
 
-.benefits-list__name {
+.benefits-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -568,7 +572,7 @@ img {
   margin-right: 30px;
 }
 
-.benefits-list__icon {
+.benefits-list__icon-box {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -613,10 +617,6 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.team {
-  background-color: var(--filer-and-team);
 }
 
 .team-list {
@@ -667,7 +667,7 @@ img {
   height: 92px;
 }
 
-.customers__icon {
+.customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -678,7 +678,7 @@ img {
   fill: var(--icons-color);
   transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
-.customers__icon:hover, .customers__icon:focus, .customers__icon:active {
+.customers__link:hover, .customers__link:focus, .customers__link:active {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }

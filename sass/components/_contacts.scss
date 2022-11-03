@@ -13,13 +13,13 @@
     color: var(--accent-color);
   }
 }
-.header-list__contacts {
+.contacts__link {
   @extend %contacts;
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
-.header-list__contact-icon {
+.contacts__icon {
   fill: currentColor;
 }
 .address__contacts {

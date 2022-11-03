@@ -1,7 +1,7 @@
 .benefits-list {
   display: flex;
 }
-.benefits-list__name {
+.benefits-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -13,7 +13,7 @@
 .benefits-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.benefits-list__icon {
+.benefits-list__icon-box {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
